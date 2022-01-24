@@ -1,0 +1,145 @@
+<mxfile host="65bd71144e">
+    <diagram id="h1fHH231krkQwXe1oc1o" name="第 1 页">
+        <mxGraphModel dx="1698" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="101" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;shadow=0;glass=0;labelBackgroundColor=#FFFF99;sketch=1;fontFamily=Helvetica;fontSize=14;fillColor=#cce5ff;container=1;opacity=50;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="-280" y="130" width="1020" height="1210" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Mesh Draw Pipeline&lt;br&gt;整体结构" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=1;shadow=0;glass=0;labelBackgroundColor=#FFFF99;sketch=1;fontFamily=Georgia;" parent="101" vertex="1">
+                    <mxGeometry x="110" y="40" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;code style=&quot;color: rgb(64 , 64 , 64) ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;FPrimitiveSceneProxy&lt;/code&gt;&lt;span style=&quot;font-family: &amp;#34;opensans_regular&amp;#34; , &amp;#34;verdana&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;sans serif&amp;#34; ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="101" vertex="1">
+                    <mxGeometry x="440" y="40" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;GetViewRelevance()&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="101" vertex="1">
+                    <mxGeometry x="415" y="200" width="250" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="101" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="101" source="3" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;cached/static path&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1794" y="-1" relative="1" as="geometry">
+                        <mxPoint x="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="FMeshBatch" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=default;labelBackgroundColor=default;" parent="101" vertex="1">
+                    <mxGeometry x="490" y="515" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;FMeshDrawCommand&lt;/span&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="101" vertex="1">
+                    <mxGeometry x="490" y="811" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="101" source="30" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;code style=&quot;color: rgb(64 , 64 , 64) ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;FMeshPassProcessor::AddMeshBatch&lt;/code&gt;&lt;span style=&quot;font-family: &amp;#34;opensans_regular&amp;#34; , &amp;#34;verdana&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;sans serif&amp;#34; ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="101" vertex="1">
+                    <mxGeometry x="490" y="671" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="101" source="24" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="540" y="701" as="targetPoint"/>
+                        <mxPoint x="540" y="621" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;SubmitMeshDrawCommands&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="101" vertex="1">
+                    <mxGeometry x="490" y="941" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=none;html=1;" parent="101" source="29" target="79" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;span&gt;Set of RHICommandList commands&lt;/span&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;gradientColor=none;labelBackgroundColor=default;" parent="101" vertex="1">
+                    <mxGeometry x="490" y="1111" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="101" source="79" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="540" y="1091" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="&lt;ul&gt;&lt;li&gt;Which shaders to use.&lt;/li&gt;&lt;li&gt;Their resource bindings.&lt;/li&gt;&lt;li&gt;Draw call parameters.&lt;/li&gt;&lt;/ul&gt;" style="text;fillColor=#ffff88;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=14;glass=0;shadow=0;strokeColor=#36393d;gradientColor=none;sketch=1;" parent="101" vertex="1">
+                    <mxGeometry x="690" y="781" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=entityRelationEdgeStyle;html=1;fontFamily=Helvetica;fontSize=14;curved=1;" parent="101" source="29" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="801" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="99" value="Horizontal Container" style="swimlane;horizontal=0;rounded=1;shadow=0;glass=0;labelBackgroundColor=#FFFF99;sketch=1;fontFamily=Helvetica;fontSize=14;fillColor=#ffff88;strokeColor=#36393d;swimlaneFillColor=#F7FFB0;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="101" vertex="1">
+                    <mxGeometry x="120" y="330" width="840" height="129" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;GetDynamicMeshElements()&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="99" vertex="1">
+                    <mxGeometry x="80" y="30" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;DrawStaticElements()&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" parent="99" vertex="1">
+                    <mxGeometry x="700" y="30" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="&lt;b&gt;动态路径&lt;/b&gt;和&lt;b&gt;静态路径&lt;/b&gt;最大的区别是：&lt;br&gt;&lt;ul&gt;&lt;li&gt;没有改动的情况下，静态路径生成的FMeshBatch会缓存起来一直复用，&lt;br&gt;&lt;/li&gt;&lt;li&gt;而动态路径则每帧都会重新创建FMeshBatch&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=#FFFF99;sketch=1;fontFamily=Helvetica;fontSize=14;" parent="99" vertex="1">
+                    <mxGeometry x="220" y="45" width="420" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="101" source="3" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="540" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="dynamic path" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="19" vertex="1" connectable="0">
+                    <mxGeometry x="-0.37" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="101" source="23" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="101" source="22" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=entityRelationEdgeStyle;curved=1;" edge="1" parent="1" source="22" target="107">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="700" y="580" as="sourcePoint"/>
+                        <mxPoint x="750" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#00B336;strokeWidth=2;labelBackgroundColor=#FFFF99;container=1;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="220" width="290" height="505" as="geometry">
+                        <mxRectangle x="790" y="220" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" value="&lt;span style=&quot;color: rgb(64, 64, 64); font-family: monospace;&quot;&gt;DrawStaticElements()&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffff99;labelBackgroundColor=none;" vertex="1" parent="115">
+                    <mxGeometry x="48.129999999999995" y="180" width="168.49" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="FMeshBatch" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;labelBackgroundColor=#FFFF99;fontSize=14;fillColor=#ffff99;" vertex="1" parent="115">
+                    <mxGeometry x="85.59677419354838" y="297.5" width="93.54838709677419" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" style="html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="115" source="107" target="110">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="&lt;span style=&quot;color: rgb(64, 64, 64); font-family: monospace;&quot;&gt;FPrimitiveSceneInfo::StaticMeshes&lt;/span&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;labelBackgroundColor=#FFFF99;fontSize=14;fillColor=#ffff99;rounded=1;arcSize=12;" vertex="1" parent="115">
+                    <mxGeometry x="85.59677419354838" y="412.5" width="93.54838709677419" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="115" source="110" target="112">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="A proxy is added to the scene" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#ffff99;shape=mxgraph.archimate3.application;appType=event;archiType=rounded;fontSize=14;" parent="115" vertex="1">
+                    <mxGeometry x="37.41935483870967" y="32.5" width="189.90322580645162" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="edgeStyle=none;html=1;" edge="1" parent="115" source="104" target="107">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" style="edgeStyle=entityRelationEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;curved=1;" edge="1" parent="1" source="116" target="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-80" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace&quot;&gt;InitViews()里每帧都会调用&lt;/span&gt;&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-family: monospace&quot;&gt;GetDynamicMeshElements()函数，&lt;br&gt;为每个view创建一个临时的FMeshBatch&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffff99;labelBackgroundColor=none;container=1;" vertex="1" collapsed="1" parent="1">
+                    <mxGeometry x="-630" y="440" width="260" height="90" as="geometry">
+                        <mxRectangle x="-630" y="440" width="230" height="170" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
